@@ -31,13 +31,13 @@ function ShoppingCheckout() {
       : 0;
 
   const handlePlaceOrder = () => {
-   if (!cartItems?.items || cartItems.items.length === 0) {
-  toast({
-    title: "Your cart is empty. Please add items to proceed.",
-    variant: "destructive",
-  });
-  return;
-}
+    if (!cartItems?.items || cartItems.items.length === 0) {
+      toast({
+        title: "Your cart is empty. Please add items to proceed.",
+        variant: "destructive",
+      });
+      return;
+    }
 
     if (currentSelectedAddress === null) {
       toast({
